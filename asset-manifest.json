@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-multiapp/static/css/main.28361cb0.css",
+    "main.js": "/react-multiapp/static/js/main.4f784345.js",
+    "index.html": "/react-multiapp/index.html",
+    "main.28361cb0.css.map": "/react-multiapp/static/css/main.28361cb0.css.map",
+    "main.4f784345.js.map": "/react-multiapp/static/js/main.4f784345.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28361cb0.css",
+    "static/js/main.4f784345.js"
+  ]
+}
