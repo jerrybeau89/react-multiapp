@@ -1,0 +1,161 @@
+
+.btnContainer {
+  background-color: black;
+  margin: 10vh auto 0 auto;
+  box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+  border-radius: 30px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+#calcDiv {
+  position: absolute;
+}
+
+#calcBtnHeader {
+  padding: 25px;
+  cursor: move;
+  width: 300px;
+  height: 510px;
+}
+
+#calcDisplay {
+  background-color: black;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: white;
+}
+
+.calcBtns {
+  background-color: black;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.calcBtns>button.top {
+  background-color: blanchedalmond;
+  border-radius: 15px 15px 8px 8px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.top-left {
+  background-color: blanchedalmond;
+  border-radius: 15px 15px 8px 15px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.top-right {
+  background-color: blanchedalmond;
+  border-radius: 15px 15px 15px 8px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.left {
+  background-color: blanchedalmond;
+  border-radius: 15px 8px 8px 15px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.right {
+  background-color: blanchedalmond;
+  border-radius: 8px 15px 15px 8px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.bottom {
+  background-color: blanchedalmond;
+  border-radius: 8px 8px 15px 15px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.bottom-left {
+  background-color: blanchedalmond;
+  border-radius: 15px 8px 15px 15px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.bottom-right {
+  background-color: blanchedalmond;
+  border-radius: 8px 15px 15px 15px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.calcBtns>button.center {
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.calcBtn {
+  border: 0.5px solid #999;
+  line-height: 80px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.calcBtns>button.btn:hover {
+  background-color: lightslategray;
+  color: white;
+  transition: 0.5s;
+}
+
+#equal {
+  background-color: lightblue;
+  color: white;
+}
+#equal:hover {
+  background-color: rgb(3, 173, 230);
+  color: white;
+  transition: 0.5s;
+}
+
+
+#clear:hover {
+  background-color: blue;
+  color: white;
+  transition: 0.5s;
+}
+
+#delete:hover {
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
