@@ -1,9 +1,13 @@
-
 .weatherHeader {
-  background-image: linear-gradient(to right, rgb(84, 112, 252), rgb(39, 13, 50));
+  background-image: linear-gradient(
+    to right,
+    rgb(84, 112, 252),
+    rgb(39, 13, 50)
+  );
   text-align: center;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .weatherSearchBtn {
@@ -20,4 +24,75 @@
   padding: 1rem;
   text-align: center;
   cursor: pointer;
+}
+
+.weatherSearch {
+  height: 2rem;
+  border-radius: 2px;
+}
+
+#weatherSearchHistory {
+  margin-top: 1rem;
+}
+
+.weatherApp {
+  display: flex;
+}
+
+/* .searchContainer {
+  border: 1px solid white;
+} */
+
+.historyListItem {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:aliceblue;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+}
+.forecastContainer {
+  padding-left: 2rem;
+  flex-grow: 1;
+  
+}
+
+.todaysForecast {
+  font-size: 1.5rem;
+  display: block;
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+.todayContainer {
+  display: flex;
+}
+.todaysForecastData {
+
+  font-size: 1.25rem;
+  flex-grow: 1;
+}
+
+.fiveDayForecast {
+  font-size: 1.5rem;
+  display: block;
+  flex-grow: 1;
+  
+}
+.fiveDayContainer {
+  display: flex;
+  
+}
+
+.fiveDayForecastData {
+  font-size: 1.25rem;
+  flex-grow: 1;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .fiveDayContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

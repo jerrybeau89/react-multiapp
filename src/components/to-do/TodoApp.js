@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import TodoList from "./components/todoList/todoList";
-import TodoForm from "./components/todoForm/todoForm";
+import TodoList from "./components/todoList";
+import TodoForm from "./components/todoForm";
 import "./assets/todoStyles.css";
 
 const TodoApp = () => {

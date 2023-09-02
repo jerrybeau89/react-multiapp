@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../assets/styles.css';
+import '../assets/styles.css';
 import Draggable from 'react-draggable';
 // import Calculate from '../calculate.jsx/calculate';
 
