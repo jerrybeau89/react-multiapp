@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-multiapp/static/css/main.68681975.css",
-    "main.js": "/react-multiapp/static/js/main.ecd90afb.js",
+    "main.js": "/react-multiapp/static/js/main.6575690c.js",
     "index.html": "/react-multiapp/index.html",
     "main.68681975.css.map": "/react-multiapp/static/css/main.68681975.css.map",
-    "main.ecd90afb.js.map": "/react-multiapp/static/js/main.ecd90afb.js.map"
+    "main.6575690c.js.map": "/react-multiapp/static/js/main.6575690c.js.map"
   },
   "entrypoints": [
     "static/css/main.68681975.css",
-    "static/js/main.ecd90afb.js"
+    "static/js/main.6575690c.js"
   ]
 }
