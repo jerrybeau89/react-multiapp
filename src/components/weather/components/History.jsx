@@ -2,17 +2,17 @@ import React from "react";
 
 function History({ searchList, getWeather }) {
   return (
-    <ul id="weatherSearchHistory">
+    <div id="weatherSearchHistory">
       {searchList.map((item, index) => (
         <button 
           key={index}
           className="historyListItem"
-          onClick={() => getWeather(true, item)}
+          onClick={() => getWeather(item)}
         >
           {item}
         </button>
       ))}
-    </ul>
+    </div>
   );
 }
 

@@ -2,11 +2,11 @@ import React from "react";
 import FiveDay from "./FiveDay";
 import Today from "./Today";
 
-function Forecast({currentWeather, fiveDayForecast, cityName}) {
+function Forecast({currentWeather, fiveDayForecast}) {
   return (
     <>
       <section className="todaysForecast">
-         Today's Forecast:{cityName}
+         Today's Forecast:
         <Today weatherData={currentWeather}/>
       </section>
       <section className="fiveDayForecast">

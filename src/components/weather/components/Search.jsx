@@ -6,9 +6,9 @@ function Search({getWeather, searchList}) {
 
   const handleSearch = () => {
     if (cityName.trim() !== "") {
-      getWeather(cityName);
       updateSearchHistory(cityName.charAt(0).toUpperCase() + cityName.slice(1));
       setCityName("");
+      getWeather(cityName);
     }
   };
 

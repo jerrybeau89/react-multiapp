@@ -9,7 +9,6 @@ function WeatherApp() {
   const [searchList, setSearchList] = useState([]);
   const [currentWeather, setCurrentWeather] = useState(null);
   const [fiveDayForecast, setFiveDayForecast] = useState(null);
-  const [cityName, setCityName] = useState('');
 
   useEffect(() => { 
     const storedSearchHistory = localStorage.getItem('searchHistory');
@@ -18,15 +17,21 @@ function WeatherApp() {
     }
   }, [])
   const handleGetWeather = async (cityName) => {
-    setCityName(cityName);
     try{
       const {currentWeather, fiveDayForecast } = await getWeatherUpdate(cityName);
       setCurrentWeather(currentWeather)
       setFiveDayForecast(fiveDayForecast)
+      updateSearchHistory(cityName.charAt(0).toUpperCase() + cityName.slice(1));
     } catch (error) {
       alert("Error getting weather Data.", error)
     }
   };
+
+  const updateSearchHistory = (city) => {
+    const updatedSearchList = [city, ...searchList];
+    setSearchList(updatedSearchList);
+    localStorage.setItem("searchHistory", JSON.stringify(updatedSearchList));
+  }; 
   return (
     <>
       <header className="weatherHeader">
@@ -37,7 +42,7 @@ function WeatherApp() {
           <Search getWeather={handleGetWeather} searchList={searchList}/>
         </aside>
         <main className="forecastContainer">
-          <Forecast currentWeather={currentWeather} fiveDayForecast={fiveDayForecast} cityName={cityName}/>
+          <Forecast currentWeather={currentWeather} fiveDayForecast={fiveDayForecast} />
         </main>
       </div>
     </>
