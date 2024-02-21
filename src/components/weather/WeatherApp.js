@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getWeatherUpdate } from "./assets/WeatherApi";
+import { getWeatherUpdate } from "./utils/WeatherApi";
 import "./assets/styles.css";
 import Forecast from "./components/Forecast";
 import Search from "./components/Search";

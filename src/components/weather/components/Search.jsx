@@ -26,9 +26,14 @@ function Search({getWeather, searchList}) {
   },[]);
 
   const updateSearchHistory = (city) => {
-    const updatedSearchList = [city, ...searchList];
-    localStorage.setItem("searchHistory", JSON.stringify(updatedSearchList));
+    const existingCities = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+    if(!existingCities.includes(city)){
+      const updatedSearchList = [city, ...existingCities];
+      localStorage.setItem("searchHistory", JSON.stringify(updatedSearchList));
+    }
   };
+
   return (
     <div className="container">
       <h3>Search for a City:</h3>

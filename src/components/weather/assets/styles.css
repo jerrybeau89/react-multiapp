@@ -20,7 +20,7 @@
   display: inline-block;
   font-size: 1rem;
   line-height: 0.25rem;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   padding: 1rem;
   text-align: center;
   cursor: pointer;
@@ -39,9 +39,6 @@
   display: flex;
 }
 
-/* .searchContainer {
-  border: 1px solid white;
-} */
 
 .historyListItem {
   display: flex;
